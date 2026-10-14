@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>مشاهد محادثات إنستاجرام — الراقصة المستديرة</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>مشاهد محادثات إنستاجرام</h1>
+    <p class="lead">اختر مجلد التصدير من جهازك (يجب أن يحتوي على ملفات الوسائط وملف/ملفات الرسائل JSON). يعمل على متصفح Chrome على الأيفون.</p>
+
+    <div class="controls">
+      <label class="btn">
+        اختر مجلد
+        <input id="folderInput" type="file" webkitdirectory directory multiple />
+      </label>
+      <button id="clearCache" class="btn danger">مسح الكاش</button>
+    </div>
+
+    <section id="status" class="card hidden"></section>
+
+    <section id="results" class="grid hidden">
+      <aside id="side">
+        <h2>الملفات المرجعية</h2>
+        <ul id="fileList"></ul>
+      </aside>
+
+      <div id="content">
+        <h2>المحادثات</h2>
+        <div id="conversations"></div>
+
+        <h2>معرض الوسائط</h2>
+        <div id="mediaGallery" class="media-grid"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>المصدر: النسخة الجديدة من المشروع — الراقصة المستديرة</p>
+    </footer>
+  </main>
+
+  <script src="src/app.js"></script>
+</body>
+</html>
